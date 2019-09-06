@@ -1,0 +1,64 @@
+/* Global styles*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-main-font: #314584;
+  --color-main-font-gray: #6E757A; 
+  --color-white: #ffffff;
+  --color-red: #ff3946; 
+  --color-bg-grid-item: #c3d0d8;
+}
+
+@font-face {
+  font-family: 'titillium_webbold';
+  src: url('../assets/fonts/font-titillium/titillium-web.bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/font-titillium/titillium-web.bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'titillium_webregular';
+  src: url('../assets/fonts/font-titillium/titillium-web.regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/font-titillium/titillium-web.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ 
+html {
+  font-size: 10px;
+  font-family: 'titillium_webregular', 'Tahoma', sans-serif;
+  color: var(--color-main-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-main-font);
+}
+
+/* Reusable
+.btn {
+  display: inline-block;
+  transition: all 650ms;
+  border-radius: 3px;
+}
+
+.btn-info {
+  margin: 2rem 0 4rem 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-red);
+}
+
+.btn-info:hover {
+  color: var(--color-red);
+  background-color: var(--color-white);
+} */

@@ -1,0 +1,180 @@
+/* Header*/
+header {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/images/header_background.png') bottom no-repeat;
+  background-size: contain;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.logo-wrapper::after{
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 14px;  
+  width: 14px;
+  height: 3px;
+  background-color: var(--color-red);
+}
+
+a.logo {  
+  font-family: 'titillium_webbold';
+  font-size: 1.8rem;
+}
+
+
+/*Header - Nav Toggle */
+.menu {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  padding: 2rem 2.5rem;
+  background-color: rgba(0,0,0,.5);
+  z-index: 999;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.menu .bar {
+  position: absolute;
+  width: 4rem;
+  height: 2px;
+  background-color: var(--color-white);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 650ms;
+}
+
+.menu .bar::before,
+.menu .bar::after{
+  content: "";
+  position: absolute;
+  left:0;
+  width: 4rem;
+  height: 2px;  
+  background-color: var(--color-white);
+  transition: 650ms;
+}
+
+.menu .bar::before{
+  top: -1rem;
+}
+
+.menu .bar::after{
+  top: 1rem;
+}
+
+.active .bar {
+  background-color: transparent;
+}
+
+.active .bar::before {
+  transform: rotate(45deg);
+}
+
+.active .bar::after {
+  transform: rotate(-45deg);
+}
+
+.active .bar::before,
+.active .bar::after{
+  top: 0;
+}
+
+/* Header - nav */
+.nav {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.nav-overlay {
+  position: fixed;
+  right:0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, .95);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 650ms;
+  transform: scale(0);
+}
+
+.nav-overlay.menu-open {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.nav .nav-overlay ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav .nav-overlay ul li {
+  text-transform: uppercase;
+}
+
+.nav .nav-overlay ul li a {
+  display: block;
+  font-size: 2rem;
+  color: var(--color-white);
+  transition: all 450ms;
+}
+
+.nav .nav-overlay ul li a:hover,
+.nav .nav-overlay ul li a .active:hover {
+  color: var(--color-red);
+}
+
+.baner {
+  margin: 3.5rem 3rem;
+  text-align: right;
+}
+
+.baner h2 {
+  margin-bottom: 2rem;
+  font-family: 'titillium_webbold';
+  font-size: 2rem;
+}
+
+.baner p {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: var(--color-main-font-gray);
+}
+
+
+.baner_btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'titillium_webbold';
+  font-size: 1.1rem;
+}
+
+.baner_btn-item-about {
+  display: block;
+  margin: 0 1rem;
+  padding: 1rem;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  border-radius: 2rem;
+}
+
