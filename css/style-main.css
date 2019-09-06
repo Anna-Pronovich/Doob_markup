@@ -1,4 +1,4 @@
-.container-wrapper {
+.content-wrapper {
   width: 90%;
   margin: 0 auto;
 }
@@ -41,12 +41,12 @@
   position: relative;
   margin: 5rem 0;
 }
+
 .contact-us::before {
   content: 'CONTACT US';
   position: absolute;
   top: -14px;
   left: 0px;  
-  /* font-size: 0.8rem; */
   color: var(--color-red);
 }
 
@@ -87,4 +87,78 @@
   color: var(--color-white);
   background-color: var(--color-red);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio h3 {
+    margin-bottom: 6rem;
+    font-size: 5rem;
+  }
+
+  .portfolio_container-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 28px;
+  }
+  
+  .container-grid_item {
+    width: 100%;
+    height: 28rem;
+  }
+
+  .portfolio_btn-info {
+    width: 19rem;
+    margin: 4rem auto;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .contact-us {
+    position: relative;
+    margin-top: 306px;
+  }
+
+  .contact-us::before {
+    font-size: 1.8rem;
+    top: -28px;
+    left: 6px;
+  }
+
+  .contact-us h3 {
+    margin-bottom: 4rem;
+    font-size: 5rem;
+  }
+
+  .contact-us-form_input-email {
+    float: left;
+    width: 49%;
+  }
+
+  .contact-us-form_input-subject { 
+    float: right;
+    width: 49%;
+  }
+
+  .contact-us-form_input-email,
+  .contact-us-form_input-subject{
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding: 12px 2rem;
+    font-size: 1.8rem;
+    background: #f4fafe;
+  }
+
+  .contact-us-form_text-area {
+    height: 12rem;
+    padding: 12px 2rem;
+    font-size: 1.8rem;
+  }
+
+  .btn-submit {
+    display: block;
+    width: 20rem;
+    margin: 6rem auto;
+    font-size: 2rem;
+    border-radius: 4rem;
+  }
+
 }
