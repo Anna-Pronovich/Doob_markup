@@ -25,7 +25,6 @@ header {
 }
 
 a.logo {  
-  font-family: 'titillium_webbold';
   font-size: 1.8rem;
 }
 
@@ -142,6 +141,8 @@ a.logo {
   color: var(--color-red);
 }
 
+  /* Baner */
+
 .baner {
   margin: 3.5rem 3rem;
   text-align: right;
@@ -149,12 +150,12 @@ a.logo {
 
 .baner h2 {
   margin-bottom: 2rem;
-  font-family: 'titillium_webbold';
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .baner p {
   margin-bottom: 1.5rem;
+  font-family: 'titillium_webregular';
   font-size: 1.3rem;
   line-height: 1.5;
   color: var(--color-main-font-gray);
@@ -165,7 +166,6 @@ a.logo {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'titillium_webbold';
   font-size: 1.1rem;
 }
 
