@@ -8,27 +8,5 @@ $('.nav a').on('click', function (){
   $('.nav-overlay').removeClass('menu-open');
 });
 
-$('.slider').slick({
-  // responsive: [
-  //   {
-  //     breakpoint: 768,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 3
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 1
-  //     }
-  //   }
-  // ]
-  
-});
+$('.slider').slick();
 

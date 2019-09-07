@@ -82,7 +82,7 @@ footer h3 {
   }
 
   .footer_nav {
-    width: 30%;
+    width: 60%;
     margin: 2rem auto 4rem;
   }
 
@@ -102,5 +102,13 @@ footer h3 {
   font-size: 4rem;
 }
   
+
+}
+@media screen and (min-width: 1580px) {
+
+  .footer_nav {
+    width: 30%;
+    margin: 2rem auto 4rem;
+  }
 
 }
